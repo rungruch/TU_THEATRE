@@ -62,7 +62,7 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
     <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/review_Simple-Slider.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script>
       window.addEventListener('load', showprice);
       
@@ -79,11 +79,6 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
       }
 
     </script>
-	
-<!-- SEARCH BOX MODULE  (1/2)-->
-<script src="js/searchbox.js"></script> 
-<link rel="stylesheet" href="css/searchbox.css">
-<!-- SEARCH BOX MODULE  (1/2) 50%complete -->
 </head>
 
 <body style="background-color: #f5f5f5;">
@@ -124,24 +119,14 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
                 </ul>
               </li>
             </ul>
-            <!--- replace old search box -->
-            <form class="d-flex" action="search.php" method="POST">
-              <input class="form-control me-2" id="searchBox" name="searchBox" autocomplete="off" type="search" placeholder="ค้นหาภาพยตร์" aria-label="Search" required>
-			  
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="ค้นหาภาพยตร์" aria-label="Search">
               <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
-<!--- replace old search box -->
           </div>
         </div>
       </nav>
-<!-- put under </nav>
- SearchBox Module2/2 attach this below nav bar uwu</nav> -->
-
-	<div id="result">
-				  
-	</div>
-
-<!-- SearchBox Module2/2 --100%complete!-->
+      
       <form action="addTicketdb.php" method="post" id="form_addticket">
           <div class="container">
         <div class="row justify-content-center">
@@ -171,7 +156,7 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
                                    <h5 id="showprice" ></h5>
                                         <small style="color: rgb(30,31,31); font-size: 22px;font-family: Kanit, sans-serif;margin-left: 0px;margin-left: 10px;">Number of Ticket </small>
                                         <br>    
-                                        <input class="form-control" type="number" id="NumOfFlim" name = "NumOfFlim" value="1" min="0" max="<?php echo  $RemainingSeat  ?>" style="height: 42px;width: 198px;margin: 0px;margin-bottom: 0px;margin-left: 120px;" >
+                                        <input class="form-control" type="number" id="NumOfFlim" name = "NumOfFlim" value="1" min="1" max="<?php echo  $RemainingSeat  ?>" style="height: 42px;width: 198px;margin: 0px;margin-bottom: 0px;margin-left: 120px;" >
                                        
                                         <br><button type="button" class="btn btn-primary shadow" style="text-align: center;font-family: Kanit, sans-serif;margin-right: 10px;margin-left: 10px;height: 30px;font-size: 12px;" onclick="add()">+</button>
                                         <button type="button" class="btn btn-primary shadow" style="text-align: center;font-family: Kanit, sans-serif;height: 30px;font-size: 12px;" onclick="rem()">-</button>
