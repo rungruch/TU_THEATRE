@@ -428,8 +428,8 @@ if($filmData['FilmRating'] == 5 ){
 <br>
 <script>
 		function gotoBook(){
-			window.location.href='Ticket.php?MovieName='+document.getElementById("MovieTitle").innerHTML;
-		}
+				window.location.href='SearchMovie.php?';
+                }
 </script>
 <script>
 
