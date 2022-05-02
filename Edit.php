@@ -75,7 +75,7 @@
               ตั๋วหนัง
             </a>
           <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="#">จองตั๋ว</a></li>
+            <li><a class="dropdown-item" href="SearchMovie.php">จองตั๋ว</a></li>
             <li><a class="dropdown-item" href="Ticket.php">ตั๋วที่มีอยู่</a></li>
           </ul><li>
           <li class="nav-item dropdown">
