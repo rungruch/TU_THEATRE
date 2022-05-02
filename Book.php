@@ -171,7 +171,7 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
                                    <h5 id="showprice" ></h5>
                                         <small style="color: rgb(30,31,31); font-size: 22px;font-family: Kanit, sans-serif;margin-left: 0px;margin-left: 10px;">Number of Ticket </small>
                                         <br>    
-                                        <input class="form-control" type="number" id="NumOfFlim" name = "NumOfFlim" value="1" min="0" max="<?php echo  $RemainingSeat  ?>" style="height: 42px;width: 198px;margin: 0px;margin-bottom: 0px;margin-left: 120px;" >
+                                        <input class="form-control" type="number" id="NumOfFlim" name = "NumOfFlim" value="1" min="1" max="<?php echo  $RemainingSeat  ?>" style="height: 42px;width: 198px;margin: 0px;margin-bottom: 0px;margin-left: 120px;" >
                                        
                                         <br><button type="button" class="btn btn-primary shadow" style="text-align: center;font-family: Kanit, sans-serif;margin-right: 10px;margin-left: 10px;height: 30px;font-size: 12px;" onclick="add()">+</button>
                                         <button type="button" class="btn btn-primary shadow" style="text-align: center;font-family: Kanit, sans-serif;height: 30px;font-size: 12px;" onclick="rem()">-</button>
