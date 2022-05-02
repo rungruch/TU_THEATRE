@@ -67,13 +67,11 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
       window.addEventListener('load', showprice);
       
       var price = " <?php echo  $Price  ?> ";
-      var price1 = price;
-
+  
       var remaingseat = " <?php echo  $RemainingSeat  ?> ";
 
 
       function showprice(){
-     // alert(price);
       document.getElementById('showprice').innerHTML='Price = ' + price ;
 
       }
@@ -171,7 +169,7 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
                                    <h5 id="showprice" ></h5>
                                         <small style="color: rgb(30,31,31); font-size: 22px;font-family: Kanit, sans-serif;margin-left: 0px;margin-left: 10px;">Number of Ticket </small>
                                         <br>    
-                                        <input class="form-control" type="number" id="NumOfFlim" name = "NumOfFlim" value="1" min="1" max="<?php echo  $RemainingSeat  ?>" style="height: 42px;width: 198px;margin: 0px;margin-bottom: 0px;margin-left: 120px;" >
+                                        <input class="form-control" type="number" id="NumOfFlim" name = "NumOfFlim" value="1" min="1" max="<?php echo  $RemainingSeat  ?>" onchange="recal()"  style="height: 42px;width: 198px;margin: 0px;margin-bottom: 0px;margin-left: 120px;" >
                                        
                                         <br><button type="button" class="btn btn-primary shadow" style="text-align: center;font-family: Kanit, sans-serif;margin-right: 10px;margin-left: 10px;height: 30px;font-size: 12px;" onclick="add()">+</button>
                                         <button type="button" class="btn btn-primary shadow" style="text-align: center;font-family: Kanit, sans-serif;height: 30px;font-size: 12px;" onclick="rem()">-</button>
@@ -201,46 +199,63 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
     <script src="js/book_Lightbox-Gallery.js"></script>
     <script src="js/book_Simple-Slider.js"></script>
 
-    <script>
+   <script>
       function rem(){
-        const cnt = document.getElementById('NumOfFlim').value;
-        if(cnt<=1 ){
+        let cnt = document.getElementById('NumOfFlim').value;
+       
+	 if(cnt<=1 ){
           document.getElementById('NumOfFlim').value = 1;
-          price = Number(price);
-          showprice();
+ 	  document.getElementById('showprice').innerHTML='Price = ' + price ;
         
         }else{
-          document.getElementById('NumOfFlim').value = Number(cnt)-1;
-          price = Number(price)-Number(price1);
-          showprice();
-       
+         cnt = Number(cnt)-1;
+ 	document.getElementById('NumOfFlim').value = Number(cnt);
+          document.getElementById('showprice').innerHTML='Price = ' + price*Number(cnt) ;     
         }
         
     }
 
     function add(){
-      const cnt = document.getElementById('NumOfFlim').value;
+      let cnt = document.getElementById('NumOfFlim').value;
 
         
-      if(cnt>= <?php echo  $RemainingSeat  ?>){
+      if(cnt >= <?php echo  $RemainingSeat  ?>){
           
           if(cnt >= 20){
              document.getElementById('NumOfFlim').value = 20;
-             price = Number(price1)*20;
-             showprice();
+             document.getElementById('showprice').innerHTML='Price = ' + price*Number(20) ;
 
           }
           else{
              document.getElementById('NumOfFlim').value = <?php echo  $RemainingSeat  ?>;
-              price = Number(price1)*<?php echo  $RemainingSeat  ?>;
-              showprice();
-          } }  
+             document.getElementById('showprice').innerHTML='Price = ' + price*<?php echo  $RemainingSeat  ?> ;
+          } 
+	} 
+ 
       else{
-          document.getElementById('NumOfFlim').value = Number(cnt)+1;
-          price = Number(price)+Number(price1);
-          showprice();
+ 	if(cnt >= 20){
+             document.getElementById('NumOfFlim').value = 20;
+             document.getElementById('showprice').innerHTML='Price = ' + price*Number(20) ;
+
+          }
+ 		else{cnt = Number(cnt)+1;
+          	document.getElementById('NumOfFlim').value = Number(cnt);
+         	 document.getElementById('showprice').innerHTML='Price = ' + price*Number(cnt) ;}
+	
         }
       
+      }
+
+
+      function recal(){
+        let cnt1 = document.getElementById('NumOfFlim').value;
+  	if(cnt1 >= 20){
+             document.getElementById('NumOfFlim').value = 20;
+            document.getElementById('showprice').innerHTML='Price = ' + price*Number(20) ;
+
+          }
+	else{ document.getElementById('showprice').innerHTML='Price = ' + price*Number(cnt1);}
+       
       }
 
     </script>
