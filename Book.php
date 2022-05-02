@@ -62,7 +62,7 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
     <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/review_Simple-Slider.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       window.addEventListener('load', showprice);
       
@@ -79,6 +79,11 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
       }
 
     </script>
+	
+<!-- SEARCH BOX MODULE  (1/2)-->
+<script src="js/searchbox.js"></script> 
+<link rel="stylesheet" href="css/searchbox.css">
+<!-- SEARCH BOX MODULE  (1/2) 50%complete -->
 </head>
 
 <body style="background-color: #f5f5f5;">
@@ -119,14 +124,24 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
                 </ul>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="ค้นหาภาพยตร์" aria-label="Search">
+            <!--- replace old search box -->
+            <form class="d-flex" action="search.php" method="POST">
+              <input class="form-control me-2" id="searchBox" name="searchBox" autocomplete="off" type="search" placeholder="ค้นหาภาพยตร์" aria-label="Search" required>
+			  
               <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
+<!--- replace old search box -->
           </div>
         </div>
       </nav>
-      
+<!-- put under </nav>
+ SearchBox Module2/2 attach this below nav bar uwu</nav> -->
+
+	<div id="result">
+				  
+	</div>
+
+<!-- SearchBox Module2/2 --100%complete!-->
       <form action="addTicketdb.php" method="post" id="form_addticket">
           <div class="container">
         <div class="row justify-content-center">
