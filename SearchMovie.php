@@ -113,7 +113,7 @@ include('server.php');
     <div class="container py-4 py-xl-5" style="background: transparent;text-align: center;">
         <div class="row mb-5">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h2 style="font-family: Kanit, sans-serif; font-size: 50px;"><strong>Theater Search</strong></h2>
+                <h2 style="font-family: Kanit, sans-serif; font-size: 50px;"><strong>เลือกรอบฉายที่ต้องการ</strong></h2>
             </div>
         </div>
 
