@@ -151,7 +151,7 @@ $query3 = mysqli_query($conn, $sql3);
                   <li><a class="dropdown-item" href="Profile.php">ข้อมูลผู้ใช้</a></li>
                   <li><a class="dropdown-item" href="Edit.php">แก้ไขข้อมูลส่วนตัว</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="MovieDerail.php?logout='1'">Logout</a></li>
+                  <li><a class="dropdown-item" href="MovieDetail.php?logout='1'">Logout</a></li>
                 </ul>
               </li>
             </ul>
@@ -348,7 +348,7 @@ if($filmData['FilmRating'] == 5 ){
 
 		<script>
 		function gotoBook(){
-			window.location.href='Ticket.php?MovieName='+document.getElementById("MovieTitle").innerHTML;
+			window.location.href='SearchMovie.php?';
 		}
 		</script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

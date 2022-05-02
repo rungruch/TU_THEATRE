@@ -175,7 +175,16 @@ $quereview = mysqli_query($conn, $review);
           </div>
         </div>
       </nav>
+			<!-- put under </nav>
+			SearchBox Module2/2 attach this below nav bar uwu</nav> -->
 
+					<div id="result">
+						  
+					</div>
+
+			<!-- SearchBox Module2/2 --100%complete!-->
+			
+			
       <!-- Body -->
 
       <div id = "myPadding">
@@ -405,7 +414,7 @@ if($filmData['FilmRating'] == 5 ){
 	      		<form class="review_form" action="MovieReview_db.php" method="post">
 									
 									<input class="form-control-plaintext" type="text" id="ReviewLabel" value="Write  a Review" readonly="" style="font-family: Kanit, sans-serif;"><label class="form-label" id="ReviewScore" style="margin: 0px;margin-right: 5px;color: rgb(19,27,33);">ให้คะแนน Review :</label>
-									<input type="number" id="ratingNum" name="ratingNum" style="width: 45px;margin-right: 5px;" max="5" min="0" step="1" required><br><br>
+									<input type="number" id="ratingNum" name="ratingNum" style="width: 45px;margin-right: 5px;" max="5" min="1" step="1" required><br><br>
 									<textarea data-bs-toggle="tooltip" class="form-control" id="Comments" name="Comments" data-bss-tooltip="" id="ReviewTextInput" style="font-family: Kanit, sans-serif;margin: 2px;margin-left: 0;height: 100px;width: 430px;" placeholder="write review here" required></textarea>
 									<br> <button class="btn btn-outline-primary float-start" data-bss-hover-animate="pulse" id="ReviewButton" name="review_user" type="submit" data-toggle="submit" style="margin-left: 0px;font-family: Kanit, sans-serif;">Submit Review</button> 
 									<?php
