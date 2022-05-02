@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/payment_Simple-Slider.css">
-    <link rel="stylesheet" href="css/payment_styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body style="background-color: #f5f5f5;">
@@ -38,7 +38,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #004aad;">
         <div class="container-fluid">
             
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="Home.php">
                     <img class="rounded" src="img/TUTheareLogo.png" alt="" width="70" height="70">
                     TU Theatre
                   </a>
@@ -49,32 +49,14 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link" href="#">หน้าหลัก</a>
+                <a class="nav-link" href="Home.php">หน้าหลัก</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  ตั๋วหนัง
-                </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#">จองตั๋ว</a></li>
-                <li><a class="dropdown-item" href="#">ตั๋วที่มีอยู่</a></li>
-              </ul><li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  ข้อมูลส่วนตัว
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="#">ข้อมูลผู้ใช้</a></li>
-                  <li><a class="dropdown-item" href="#">แก้ไขข้อมูลส่วนตัว</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </li>
+              
+           <li>
+          
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="ค้นหาภาพยตร์" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
+          
           </div>
         </div>
       </nav>
