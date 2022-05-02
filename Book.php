@@ -68,9 +68,8 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
       window.addEventListener('load', showprice);
 
  
-    if(typeof window.history.pushState == 'function') {
-        window.history.pushState({}, "Hide", "http://localhost/tutheatre/Book.php?");
-    }
+      var newURL = location.href.split("?")[0];
+      window.history.pushState('object', document.title, newURL);
 
       
       var price = " <?php echo  $Price  ?> ";
@@ -79,7 +78,7 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
 
 
       function showprice(){
-      document.getElementById('showprice').innerHTML='Price = ' + price ;
+      document.getElementById('showprice').innerHTML='Price: ' + price ;
 
       }
 
@@ -212,12 +211,12 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
        
 	 if(cnt<=1 ){
           document.getElementById('NumOfFlim').value = 1;
- 	  document.getElementById('showprice').innerHTML='Price = ' + price ;
+ 	  document.getElementById('showprice').innerHTML='Price: ' + price ;
         
         }else{
          cnt = Number(cnt)-1;
  	document.getElementById('NumOfFlim').value = Number(cnt);
-          document.getElementById('showprice').innerHTML='Price = ' + price*Number(cnt) ;     
+          document.getElementById('showprice').innerHTML='Price: ' + price*Number(cnt) ;     
         }
         
     }
@@ -230,24 +229,24 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
           
           if(cnt >= 20){
              document.getElementById('NumOfFlim').value = 20;
-             document.getElementById('showprice').innerHTML='Price = ' + price*Number(20) ;
+             document.getElementById('showprice').innerHTML='Price: ' + price*Number(20) ;
 
           }
           else{
              document.getElementById('NumOfFlim').value = <?php echo  $RemainingSeat  ?>;
-             document.getElementById('showprice').innerHTML='Price = ' + price*<?php echo  $RemainingSeat  ?> ;
+             document.getElementById('showprice').innerHTML='Price: ' + price*<?php echo  $RemainingSeat  ?> ;
           } 
 	} 
  
       else{
  	if(cnt >= 20){
              document.getElementById('NumOfFlim').value = 20;
-             document.getElementById('showprice').innerHTML='Price = ' + price*Number(20) ;
+             document.getElementById('showprice').innerHTML='Price: ' + price*Number(20) ;
 
           }
  		else{cnt = Number(cnt)+1;
           	document.getElementById('NumOfFlim').value = Number(cnt);
-         	 document.getElementById('showprice').innerHTML='Price = ' + price*Number(cnt) ;}
+         	 document.getElementById('showprice').innerHTML='Price: ' + price*Number(cnt) ;}
 	
         }
       
@@ -258,10 +257,10 @@ $_SESSION['RemainingSeat']= $RemainingSeat;
         let cnt1 = document.getElementById('NumOfFlim').value;
   	if(cnt1 >= 20){
              document.getElementById('NumOfFlim').value = 20;
-            document.getElementById('showprice').innerHTML='Price = ' + price*Number(20) ;
+            document.getElementById('showprice').innerHTML='Price: ' + price*Number(20) ;
 
           }
-	else{ document.getElementById('showprice').innerHTML='Price = ' + price*Number(cnt1);}
+	else{ document.getElementById('showprice').innerHTML='Price: ' + price*Number(cnt1);}
        
       }
 
