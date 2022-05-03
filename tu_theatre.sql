@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 01, 2022 at 10:22 PM
+-- Generation Time: May 03, 2022 at 11:47 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tu_theatre`
+-- Database: `TU_Theatre`
 --
 
 -- --------------------------------------------------------
@@ -6141,9 +6141,54 @@ CREATE TABLE `review` (
 --
 
 INSERT INTO `review` (`mID`, `FilmID`, `rating`, `comment`) VALUES
-('9999999999991', 50, 3, 'fun'),
-('9999999999991', 57, 5, 'ชอบเพลงมาก'),
-('9999999999991', 61, 5, 'สนุกมาก');
+('1139400124857', 50, 1, 'This is a silent film with a few \"sound effects\" as sound pictures were just coming into their own. A treasure of a film.'),
+('1500000000001', 50, 4, 'It\'s a biopic of a ruthless but human fictional plutocrat, told in flashback but hopping around time.'),
+('1500000000002', 50, 3, 'This short film that inspired the soon-to-be full length feature - Spatula Madness - is a hilarious piece that contends against similar cartoons yielding multiple writers.'),
+('1500000000004', 50, 2, 'Usually I\'m a bit of a fan of the bad eighties & early nineties film featuring now has beens...but this film is so incredibly terrible that it was a real endurance test to sit through.'),
+('1500000000005', 50, 4, 'I sure would like to see a resurrection of a up dated Seahunt series with the tech they have today it would bring back the kid excitement in me.'),
+('3340100323251', 50, 4, '\"A bored television director is introduced to the black arts and astral projection by his girlfriend. Learning the ability to separate his spirit from his body, the man finds a renewed interest in his life and a sense of wellbeing.'),
+('1139400124857', 51, 4, 'It is easy to tell early in this movie exactly what will happen, and who will die. It is about 4 women and a man who on a vacation. Totally crap and totally depressing.'),
+('1139600423166', 51, 3, 'I guess I have to do what I should have done from the start and buy a copy of the book if i\'m to make any sense out of this. All in all, very disappointed in something I\'ve waited for years to watch.'),
+('1500000000001', 51, 5, 'This is the best version (so far) that you will see and the most true to the Bronte work. Dalton is a little tough to imagine as Rochester who Jane Eyre declared \"not handsome\".'),
+('1500000000004', 51, 4, 'I have now seen quite a few films by Pedro Almodóvar, but this would have to be the most disappointing so far.'),
+('1500000000005', 51, 4, 'This show was an amazing, fresh & innovative idea in the 70\'s'),
+('3340100323251', 51, 3, 'Ah yes the 1980s , a time of Reaganomics and Sly , Chuck and a host of other action stars hiding in a remote jungle blowing away commies.'),
+('1500000000001', 52, 1, 'Apparently, the people that wrote the back of the box did not bother to watch this so-called \"movie.\" They described \"blindingly choreographed intrigue and violence. I was not blinded by the choreography.'),
+('1500000000002', 52, 5, 'I bought this game on an impulse buy from walmart. I am glad I did. It was very entertaining listening to Sean Connery and playing the game. I think the developers did a good job.'),
+('1500000000004', 52, 4, 'I greatly enjoyed Margaret Atwood\'s novel \'The Robber Bride\', and I was thrilled to see there was a movie version.'),
+('1500000000005', 52, 3, 'Encouraged by the positive comments about this film on here I was looking forward to watching this film.'),
+('3340100323251', 52, 4, 'This tale based on two Edgar Allen Poe pieces (\"The Fall of the House of Usher\", \"Dance of Death\" (poem) ) is actually quite creepy from beginning to end. Watch it with plenty of popcorn and soda in a darkened room. Dan Basinger 8/10'),
+('1139400124857', 54, 2, 'No, this hilariously horrible 70\'s made-for-TV horror clinker isn\'t about a deadly demonically possessed dessert cake.'),
+('1500000000004', 54, 5, 'this movie gets a 10 because there is a lot of gore in it.who cares about the plot or the acting.this is an Italian horror movie people so you know you can\'t expect much from the acting or the plot.'),
+('1500000000005', 54, 4, 'Probably my all-time favorite movie, a story of selflessness, sacrifice and dedication to a noble cause, but it\'s not preachy or boring.'),
+('1139600423166', 55, 1, 'All in all, a very disappointing film, especially seeing as how it comes from the director of Suzhou He. 2/10'),
+('1500000000005', 55, 5, 'I have been a Mario fan for as long as I can remember, I have very fond memories of playing Super Mario World as a kid, this game has brought back many of those memories while adding something new. A perfect 10 out of 10!'),
+('3004266217422', 55, 3, 'Only the slightly dodgy escape sequence from the court spoils what would otherwise be a great film but I guess is in line with the caper tag the film goes with.'),
+('3340100323251', 55, 3, 'Ingrid Bergman, playing dentist Walter Matthau\'s faithful receptionist who harbors a little crush on her boss, is absolutely wonderful in this film.'),
+('6990032970211', 55, 5, 'I am so happy and surprised that there is so much interest in this movie! Jack Frost was my introduction into the films produced and distributed.'),
+('6990032970211', 56, 3, '\"Revolt of the Zombies\" proves that having the same director revamp and recycle an idea doesn\'t necessarily make lightning strike twice.'),
+('1139600108126', 58, 4, 'A few movie execs are having a meeting & the caption reads: \"Let\'s remake a classic with worse everything!\"'),
+('1500000000002', 58, 4, 'Okay, last night, August 18th, 2004, I had the distinct displeasure of meeting Mr. Van Bebble at a showing of the film The Manson Family at the Three Penny in Chicago as part of the Chicago Underground Film Festival.'),
+('3004266217422', 58, 4, 'Two hours ago I was watching this brilliant movie which overwhelmed me with its imprisoning photography. It is quite understandable how it won the prize of Best Camera in Cannes 2000. Close ups predominated it.'),
+('6990032970211', 58, 4, 'I am okay with these night time soaps, like Grey\'s Anatomy, or Ugly Betty, or West Wing, because there are stories that are interesting even with the given that they will never end.'),
+('6990032970211', 59, 5, 'This movie was one of the best movies that I have seen this year. I didn\'t see any cameos in the movie, but it is still pretty good.  Steve did a wonderful job of portraying the person that he did in this movie and yet, it is still funny.'),
+('1139400124857', 60, 3, 'The performance of every actor and actress (in the film) are excellently NATURAL which is what movie acting should be; and the directing skill is so brilliantly handled on every details that I am never tired of seeing it over and over again.'),
+('1139600108126', 60, 5, 'This movie is hard to come by. Netflix does not have it. Facets does, though.'),
+('1500000000001', 60, 4, 'While Star Trek the Motion Picture was mostly boring, Star Trek The Final Frontier is plain bad.'),
+('1500000000003', 60, 0, 'It\'s terrific when a funny movie doesn\'t make smile you. What a pity!! This film is very boring and so long. It\'s simply painfull. The story is staggering without goal and no fun.cYou feel better when it\'s finished.'),
+('3004266217422', 60, 5, 'Just be warned..... avoid the sequels!!!! Especially the one with Corey Feldman!! 8 of 10 stars.'),
+('1500000000003', 61, 5, 'So well made, no CGI crap. Has anyone else been on the \"Jumping Crocs\" tour of Darwin\'s Adelaide River before? Black Water was WAY realistic; Rogue was a bit cringeworthy. Loved it!'),
+('3240100573148', 61, 2, '\"The Danish Bladerunner\" is boldly stated on the box. Are you kidding me?! This film is a complete drag.'),
+('1500000000001', 62, 4, 'I liked Boyle\'s performance, but that\'s about the only positive thing I can say. Everything was overdone to the point of absurdity.'),
+('3240100573148', 62, 1, 'TThis movie should be removed from the public. The person who made this movie needs psychological help.'),
+('3240100573148', 63, 2, 'I would tell you what the plot was, but that would be one more sentence fragment to this article, plus my mind drifted many times during the movie anyway, so I barely paid attention.'),
+('1500000000003', 65, 4, 'Set in the 1794, the second year of the French republic formed after the execution of Louis XVI, this film portrays the power struggle between the revolutionary leaders Danton (Gerard Depardieu, at his finest) and Robespierre (a commanding performance by the Polish actor Wojciech Pszoniak).'),
+('1139600108126', 66, 5, 'You can clearly see the folds in the paper ! Every expense spared or what !'),
+('1139600423166', 67, 3, 'I actually think that \"Spike of Bensonhurst\" is a better acted film than this...and I walked out half way through that film!'),
+('1139600108126', 68, 4, 'Not a great masterpiece by any means (I would have liked to have seen a tad more about Pam Dawber), but definitely watchable, especially for those Robin Williams and \"Mork & Mindy\" fans out there. Nanoo, nanoo!'),
+('1500000000003', 68, 3, 'The Assignment is an outstanding thriller with several plot twists driven by character, rather than star turns, the need to stage special effects, obligatory romance, and endless car chases.'),
+('1139600423166', 70, 4, 'Before I begin, let me get something off my chest: I\'m a huge fan of John Eyres\' first film PROJECT: SHADOWCHASER. The film, a B-grade cross of both THE TERMINATOR & DIE HARD'),
+('1500000000003', 70, 5, 'Of course the end where despite themselves the perfect meal mellows them back to friendship is the only ending there could be..this is a 10 out of 10 film and should be seen by anyone with enough brain and taste to understand it');
 
 -- --------------------------------------------------------
 
