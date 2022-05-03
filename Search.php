@@ -62,6 +62,7 @@ $query3 = mysqli_query($conn, $sql3);
     <link rel="stylesheet" href="css/style.css">
 	<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 	<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
     #ButtonGenre{
         cursor: context-menu;
@@ -117,6 +118,11 @@ $query3 = mysqli_query($conn, $sql3);
     font-size: 24px !important
 }
 </style>
+
+<!-- SEARCH BOX MODULE  (1/2)-->
+<script src="js/searchbox.js"></script> 
+<link rel="stylesheet" href="css/searchbox.css">
+<!-- SEARCH BOX MODULE  (1/2) 50%complete -->
 </head>
 
 <body style="font-family: Kanit, sans-serif;background: rgb(245,245,245);">
@@ -156,14 +162,24 @@ $query3 = mysqli_query($conn, $sql3);
                 </ul>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="ค้นหาภาพยตร์" aria-label="Search">
+<!--- replace old search box XD 75%-->
+            <form class="d-flex" action="search.php" method="POST">
+              <input class="form-control me-2" id="searchBox" name="searchBox" autocomplete="off" type="search" placeholder="ค้นหาภาพยตร์" aria-label="Search" required>
+			  
               <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
+<!--- replace old search box XD 75%-->
           </div>
         </div>
       </nav>
+<!-- put under </nav>
+ SearchBox Module2/2 attach this below nav bar uwu</nav> -->
 
+	<div id="result">
+				  
+	</div>
+
+<!-- SearchBox Module2/2 --100%complete!-->
       <div id = "myPadding"><div class="container">
 
         <div class="container">
@@ -325,7 +341,7 @@ if($filmData['FilmRating'] == 5 ){
                   <div class="card-body p-4" style="font-family: Kanit, sans-serif;box-shadow: inset 0px 0px #070707;">
                       <p class="text-primary card-text mb-0" id="ReviewUserName1" style="box-shadow: inset 0px 0px #070707;"><?=$Review['FirstName']?> <?=$Review['LastName']?></p>
                       <p class="fw-bold float-start mb-0" style="width: 50px;color: rgb(31,31,31);box-shadow: inset 0px 0px #070707;">Rating</p>
-                      <p class="text-muted float-start card-text mb-0" style="box-shadow: inset 0px 0px #070707;">&nbsp; <?=$Review['rating']?></p><textarea id="ReviewTextDis1" readonly="" style="width: 354px;height: 154px;font-family: Kanit, sans-serif;box-shadow: inset 0px 0px #070707;" placeholder="<?=$Review['comment']?>"></textarea>
+                      <p class="text-muted float-start card-text mb-0" style="box-shadow: inset 0px 0px #070707;">&nbsp; <?=$Review['rating']?></p><textarea id="ReviewTextDis1" readonly="" style="min-width: 100%;height: 154px;font-family: Kanit, sans-serif;box-shadow: inset 0px 0px #070707;" placeholder="<?=$Review['comment']?>"></textarea>
                       <div class="d-flex" style="box-shadow: inset 0px 0px #070707;">
                           <div style="box-shadow: inset 0px 0px #070707;"></div>
                       </div>
