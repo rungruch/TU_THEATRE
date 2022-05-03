@@ -28,13 +28,24 @@
   $Price = $_GET['Price'];
   $RemainingSeat = $_GET['RemainingSeat'];
   $TheatreName = $_GET['TheatreName'];
+  $ID = $_SESSION['ID'];
+  
+  $temp_sql = "SELECT `MemberType` FROM `member` WHERE `mID` = '$ID';";
+  $temp_result = mysqli_query($conn, $temp_sql);
+  $temp_result = mysqli_fetch_assoc($temp_result);
+  if($temp_result['MemberType'] == 'K'){
+    $Price = $Price-($Price*0.2);
+  }else if($temp_result['MemberType'] == 'S'){
+    $Price = $Price-($Price*0.3);
+  }else if($temp_result['MemberType'] == 'O'){
+    $Price = $Price-($Price*0.4);
+  }
 
 
-
-$_SESSION['FilmID'] =  $FilmID;
-$_SESSION['TheatreID']= $TheatreID ;
-$_SESSION['ShowTime']= $showtime;
-$_SESSION['RemainingSeat']= $RemainingSeat;
+  $_SESSION['FilmID'] =  $FilmID;
+  $_SESSION['TheatreID']= $TheatreID ;
+  $_SESSION['ShowTime']= $showtime;
+  $_SESSION['RemainingSeat']= $RemainingSeat;
 
 
  
