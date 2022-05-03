@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 03, 2022 at 11:47 AM
+-- Generation Time: May 03, 2022 at 04:40 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -88,25 +88,25 @@ CREATE TABLE `film` (
 
 INSERT INTO `film` (`FilmID`, `FilmName`, `FilmDescription`, `FilmDuration`, `FilmRating`) VALUES
 (50, 'Spider-Man No Way Home', 'With Spider-Man\'s identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.', '02:28:00', 3),
-(51, 'Avengers Endgame', 'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.', '03:01:00', 0),
-(52, 'The Medium', 'A horrifying story of a shaman\'s inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be.', '02:10:00', 0),
-(54, 'Doctor Strange', 'Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.', '02:06:00', 0),
-(55, 'Fantastic Beasts The Secrets of Dumbledore', 'Professor Albus Dumbledore knows the powerful Dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts Magizoologist Newt Scamander to lead an intrepid team of wizards, witches and one brave Muggle baker on a dangerous mission, where they encounter old and new beasts and clash with Grindelwald\'s growing legion of followers. But with the stakes so high, how long can Dumbledore remain on the sidelines?', '02:22:00', 0),
-(56, 'The Lost City', 'A reclusive romance novelist on a book tour with her cover model gets swept up in a kidnapping attempt that lands them both in a cutthroat jungle adventure.', '01:52:00', 0),
-(57, 'Twenty One Pilots Cinema Experience', 'Journey inside the minds of GRAMMY Award winning duo Twenty One Pilots, as the epic Scaled And Icy album release celebration from 2021 comes to cinemas worldwide on May 19 with encores in select cinemas on May 22. Experience the psychedelic reimagined take on live theater and performance again, but this time on a massive scale.', '01:26:00', 5),
-(58, 'Morbius', 'Biochemist Michael Morbius tries to cure himself of a rare blood disease, but he inadvertently infects himself with a form of vampirism instead.', '01:44:00', 0),
-(59, 'Top Gun Maverick', 'After more than thirty years of service as one of the Navy\'s top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.', '02:11:00', 0),
-(60, 'Jujutsu Kaisen Zero The Movie', 'Yuta Okkotsu, a high schooler who gains control of an extremely powerful Cursed Spirit and gets enrolled in the Tokyo Prefectural Jujutsu High School by Jujutsu Sorcerers to help him control his power and keep an eye on him.', '01:45:00', 0),
-(61, 'Nope', 'The residents of a lonely gulch in inland California bear witness to an uncanny and chilling discovery.', '01:55:00', 5),
-(62, 'Gold', 'In the not too distant future, a drifter (Zac Efron) travelling through the desert discovers the largest gold nugget ever found. He must guard it from thieves amid harsh conditions and wild dogs while waiting for his partner to return.', '01:37:00', 0),
-(63, 'Minions The Rise of Gru', 'In 2017, DESPICABLE ME 3 grossed over $1 billion worldwide and broke the record for opening weekend and single-day gross in China. Next summer, ILLUMINATION will release the follow-up to the third-highest grossing animated film of all time worldwide with MINIONS: THE RISE OF GRU.', '01:30:00', 0),
+(51, 'Avengers Endgame', 'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.', '03:01:00', 3.8),
+(52, 'The Medium', 'A horrifying story of a shaman\'s inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be.', '02:10:00', 3.4),
+(54, 'Doctor Strange', 'Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.', '02:06:00', 3.7),
+(55, 'Fantastic Beasts The Secrets of Dumbledore', 'Professor Albus Dumbledore knows the powerful Dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts Magizoologist Newt Scamander to lead an intrepid team of wizards, witches and one brave Muggle baker on a dangerous mission, where they encounter old and new beasts and clash with Grindelwald\'s growing legion of followers. But with the stakes so high, how long can Dumbledore remain on the sidelines?', '02:22:00', 3.4),
+(56, 'The Lost City', 'A reclusive romance novelist on a book tour with her cover model gets swept up in a kidnapping attempt that lands them both in a cutthroat jungle adventure.', '01:52:00', 3),
+(57, 'Twenty One Pilots Cinema Experience', 'Journey inside the minds of GRAMMY Award winning duo Twenty One Pilots, as the epic Scaled And Icy album release celebration from 2021 comes to cinemas worldwide on May 19 with encores in select cinemas on May 22. Experience the psychedelic reimagined take on live theater and performance again, but this time on a massive scale.', '01:26:00', 0),
+(58, 'Morbius', 'Biochemist Michael Morbius tries to cure himself of a rare blood disease, but he inadvertently infects himself with a form of vampirism instead.', '01:44:00', 4),
+(59, 'Top Gun Maverick', 'After more than thirty years of service as one of the Navy\'s top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.', '02:11:00', 5),
+(60, 'Jujutsu Kaisen Zero The Movie', 'Yuta Okkotsu, a high schooler who gains control of an extremely powerful Cursed Spirit and gets enrolled in the Tokyo Prefectural Jujutsu High School by Jujutsu Sorcerers to help him control his power and keep an eye on him.', '01:45:00', 3.4),
+(61, 'Nope', 'The residents of a lonely gulch in inland California bear witness to an uncanny and chilling discovery.', '01:55:00', 3.5),
+(62, 'Gold', 'In the not too distant future, a drifter (Zac Efron) travelling through the desert discovers the largest gold nugget ever found. He must guard it from thieves amid harsh conditions and wild dogs while waiting for his partner to return.', '01:37:00', 2.5),
+(63, 'Minions The Rise of Gru', 'In 2017, DESPICABLE ME 3 grossed over $1 billion worldwide and broke the record for opening weekend and single-day gross in China. Next summer, ILLUMINATION will release the follow-up to the third-highest grossing animated film of all time worldwide with MINIONS: THE RISE OF GRU.', '01:30:00', 2),
 (64, 'The Northman', 'From visionary director Robert Eggers comes The Northman, an action-filled epic that follows a young Viking prince on his quest to avenge his father\'s murder.', '02:17:00', 0),
-(65, 'After Yang', 'In a near future, a family reckons with questions of love, connection, and loss after their A.I. helper unexpectedly breaks down.', '01:36:00', 0),
-(66, 'The Black Phone', 'After being abducted by a child killer and locked in a soundproof basement, a 13-year-old boy starts receiving calls on a disconnected phone from the killer\'s previous victims.', '01:42:00', 0),
-(67, 'Jurassic World Dominion', 'Four years after the destruction of Isla Nublar, dinosaurs now live--and hunt--alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history\'s most fearsome creatures in a new Era', '02:26:00', 0),
-(68, 'The Last 10 Years', 'Twenty-year-old Matsuri Takabayashi learns that she only has ten years to live due to an incurable disease. She decides to not dwell on her life and not to fall in love, but she meets Kazuto Manabe at a school reunion.', '02:04:00', 0),
+(65, 'After Yang', 'In a near future, a family reckons with questions of love, connection, and loss after their A.I. helper unexpectedly breaks down.', '01:36:00', 4),
+(66, 'The Black Phone', 'After being abducted by a child killer and locked in a soundproof basement, a 13-year-old boy starts receiving calls on a disconnected phone from the killer\'s previous victims.', '01:42:00', 5),
+(67, 'Jurassic World Dominion', 'Four years after the destruction of Isla Nublar, dinosaurs now live--and hunt--alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history\'s most fearsome creatures in a new Era', '02:26:00', 3),
+(68, 'The Last 10 Years', 'Twenty-year-old Matsuri Takabayashi learns that she only has ten years to live due to an incurable disease. She decides to not dwell on her life and not to fall in love, but she meets Kazuto Manabe at a school reunion.', '02:04:00', 3.5),
 (69, 'Everything Everywhere All at Once', 'An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes connecting with the lives she could have led.', '02:19:00', 0),
-(70, 'Shark Bait', 'A group of friends enjoying a weekend steal a couple of jetskis racing them out to sea, ending up in a horrific head-on collision. They struggle to find a way home with a badly injured friend while from the waters below predators lurk.', '01:27:00', 0);
+(70, 'Shark Bait', 'A group of friends enjoying a weekend steal a couple of jetskis racing them out to sea, ending up in a horrific head-on collision. They struggle to find a way home with a badly injured friend while from the waters below predators lurk.', '01:27:00', 4.5);
 
 -- --------------------------------------------------------
 
@@ -195,8 +195,7 @@ INSERT INTO `member` (`mID`, `MemberType`) VALUES
 ('1500000000001', 'S'),
 ('1500000000003', 'S'),
 ('1500000000004', 'S'),
-('3200185600329', 'S'),
-('9999999999991', 'S');
+('3200185600329', 'S');
 
 -- --------------------------------------------------------
 
@@ -214,10 +213,10 @@ CREATE TABLE `membertype` (
 --
 
 INSERT INTO `membertype` (`MemberType`, `Discount`) VALUES
-('K', 40),
+('K', 20),
 ('N', 0),
-('O', 60),
-('S', 55);
+('O', 40),
+('S', 30);
 
 -- --------------------------------------------------------
 
@@ -6485,6 +6484,7 @@ CREATE TABLE `user_account` (
 --
 
 INSERT INTO `user_account` (`ID`, `Password`, `FirstName`, `LastName`, `BirthDay`, `Gender`, `Email`, `HouseNo`, `MO`, `District`) VALUES
+('1111111111111', '25d55ad283aa400af464c76d713c07ad', 'test', 'na', '2022-04-05', 'M', 'Test@gmail.com', '12', '12', 'กกกุง'),
 ('1139400124857', 'e7579203fe04e8d95dd705666e274fe2', 'Atip', 'Boonyooong', '1970-06-04', 'M', 'atip12@hotmail.com', '10/1', '5', 'โพธาราม'),
 ('1139600108126', '1bbd886460827015e5d605ed44252251', 'Rungruch', 'Ruangrong', '2000-10-28', 'M', 'rungruch2543@gmail.com', '11/23', '1', 'ดอนเมือง'),
 ('1139600423166', 'a09a6dfcbf236951a25fdcb14e136f2c', 'Atjima', 'Bhoonphol', '2000-12-14', 'N', 'artjima43@gmail.com', '198/2', '11', 'ดอนเมือง'),
