@@ -209,7 +209,7 @@
                  </div>
                  <div class="form-group"><label style="margin-top: 5px;font-family: Kanit, sans-serif;">เบอร์โทรศัพท์สำหรับติดต่อ (Phone Number)</label><input class="form-control" type="tel" placeholder="เบอร์โทรศัพท์ เช่น 0987654321" id="etel" name="PhoneNum" required="" maxlength="10" minlength="10" style="font-family: Kanit, sans-serif;" pattern="[0]{1}[0-9]{1}[0-9]{8}"></div>
                  <div class="form-group text-center">
-                  <button class="btn btn-primary shadow" data-bss-hover-animate="pulse" type="button" data-toggle="submit">ย้อนกลับ</button>
+                  <button class="btn btn-primary shadow" data-bss-hover-animate="pulse" type="button" onclick="history.back()" data-toggle="submit">ย้อนกลับ</button>
                    <button class="btn btn-primary shadow" data-bss-hover-animate="pulse" type="submit" data-toggle="submit" name="edit_user">ยืนยัน (Confirm)</button></div>
              </form>
          </div>
