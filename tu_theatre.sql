@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 03, 2022 at 04:40 PM
+-- Generation Time: May 06, 2022 at 09:49 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `TU_Theatre`
+-- Database: `tu_theatre`
 --
 
 -- --------------------------------------------------------
@@ -88,9 +88,9 @@ CREATE TABLE `film` (
 
 INSERT INTO `film` (`FilmID`, `FilmName`, `FilmDescription`, `FilmDuration`, `FilmRating`) VALUES
 (50, 'Spider-Man No Way Home', 'With Spider-Man\'s identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.', '02:28:00', 3),
-(51, 'Avengers Endgame', 'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.', '03:01:00', 3.8),
+(51, 'Avengers Endgame', 'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.', '03:01:00', 4.4),
 (52, 'The Medium', 'A horrifying story of a shaman\'s inheritance in the Isan region of Thailand. What could be possessing a family member might not be the Goddess they make it out to be.', '02:10:00', 3.4),
-(54, 'Doctor Strange', 'Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.', '02:06:00', 3.7),
+(54, 'Doctor Strange', 'Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.', '02:06:00', 4.35),
 (55, 'Fantastic Beasts The Secrets of Dumbledore', 'Professor Albus Dumbledore knows the powerful Dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts Magizoologist Newt Scamander to lead an intrepid team of wizards, witches and one brave Muggle baker on a dangerous mission, where they encounter old and new beasts and clash with Grindelwald\'s growing legion of followers. But with the stakes so high, how long can Dumbledore remain on the sidelines?', '02:22:00', 3.4),
 (56, 'The Lost City', 'A reclusive romance novelist on a book tour with her cover model gets swept up in a kidnapping attempt that lands them both in a cutthroat jungle adventure.', '01:52:00', 3),
 (57, 'Twenty One Pilots Cinema Experience', 'Journey inside the minds of GRAMMY Award winning duo Twenty One Pilots, as the epic Scaled And Icy album release celebration from 2021 comes to cinemas worldwide on May 19 with encores in select cinemas on May 22. Experience the psychedelic reimagined take on live theater and performance again, but this time on a massive scale.', '01:26:00', 0),
@@ -190,8 +190,10 @@ INSERT INTO `member` (`mID`, `MemberType`) VALUES
 ('6990032970211', 'N'),
 ('3004266217422', 'O'),
 ('3240100573148', 'O'),
+('1133450108126', 'S'),
 ('1139600108126', 'S'),
 ('1139600423166', 'S'),
+('1233567890123', 'S'),
 ('1500000000001', 'S'),
 ('1500000000003', 'S'),
 ('1500000000004', 'S'),
@@ -6116,10 +6118,11 @@ INSERT INTO `p_tel` (`Tel`, `ID`) VALUES
 ('0839325893', '6990032970211'),
 ('0843225657', '3200185600329'),
 ('0843263390', '1500000000004'),
+('0845921376', '1133450108126'),
 ('0847275926', '3240100573148'),
+('0870808547', '1233567890123'),
 ('0890908767', '1500000000002'),
 ('0899991303', '3340100323251'),
-('0899999918', '9999999999991'),
 ('0952850731', '1500000000005');
 
 -- --------------------------------------------------------
@@ -6146,6 +6149,7 @@ INSERT INTO `review` (`mID`, `FilmID`, `rating`, `comment`) VALUES
 ('1500000000004', 50, 2, 'Usually I\'m a bit of a fan of the bad eighties & early nineties film featuring now has beens...but this film is so incredibly terrible that it was a real endurance test to sit through.'),
 ('1500000000005', 50, 4, 'I sure would like to see a resurrection of a up dated Seahunt series with the tech they have today it would bring back the kid excitement in me.'),
 ('3340100323251', 50, 4, '\"A bored television director is introduced to the black arts and astral projection by his girlfriend. Learning the ability to separate his spirit from his body, the man finds a renewed interest in his life and a sense of wellbeing.'),
+('1133450108126', 51, 5, 'สนุกมากๆๆๆๆ'),
 ('1139400124857', 51, 4, 'It is easy to tell early in this movie exactly what will happen, and who will die. It is about 4 women and a man who on a vacation. Totally crap and totally depressing.'),
 ('1139600423166', 51, 3, 'I guess I have to do what I should have done from the start and buy a copy of the book if i\'m to make any sense out of this. All in all, very disappointed in something I\'ve waited for years to watch.'),
 ('1500000000001', 51, 5, 'This is the best version (so far) that you will see and the most true to the Bronte work. Dalton is a little tough to imagine as Rochester who Jane Eyre declared \"not handsome\".'),
@@ -6158,6 +6162,7 @@ INSERT INTO `review` (`mID`, `FilmID`, `rating`, `comment`) VALUES
 ('1500000000005', 52, 3, 'Encouraged by the positive comments about this film on here I was looking forward to watching this film.'),
 ('3340100323251', 52, 4, 'This tale based on two Edgar Allen Poe pieces (\"The Fall of the House of Usher\", \"Dance of Death\" (poem) ) is actually quite creepy from beginning to end. Watch it with plenty of popcorn and soda in a darkened room. Dan Basinger 8/10'),
 ('1139400124857', 54, 2, 'No, this hilariously horrible 70\'s made-for-TV horror clinker isn\'t about a deadly demonically possessed dessert cake.'),
+('1233567890123', 54, 5, 'สนุกมากๆๆๆๆๆ'),
 ('1500000000004', 54, 5, 'this movie gets a 10 because there is a lot of gore in it.who cares about the plot or the acting.this is an Italian horror movie people so you know you can\'t expect much from the acting or the plot.'),
 ('1500000000005', 54, 4, 'Probably my all-time favorite movie, a story of selflessness, sacrifice and dedication to a noble cause, but it\'s not preachy or boring.'),
 ('1139600423166', 55, 1, 'All in all, a very disappointing film, especially seeing as how it comes from the director of Suzhou He. 2/10'),
@@ -6209,9 +6214,9 @@ CREATE TABLE `showtime` (
 
 INSERT INTO `showtime` (`TheatreID`, `FilmID`, `ShowTime`, `Price`, `RemainingSeat`) VALUES
 (1, 50, '2022-05-02 00:00:00', 210, 3),
-(1, 50, '2022-05-10 11:10:00', 210, 120),
+(1, 50, '2022-05-10 11:10:00', 210, 117),
 (1, 50, '2022-05-10 14:50:00', 210, 120),
-(1, 51, '2022-05-11 02:00:00', 240, 120),
+(1, 51, '2022-05-11 02:00:00', 240, 117),
 (1, 51, '2022-05-11 08:20:00', 240, 120),
 (1, 51, '2022-05-12 02:40:00', 240, 120),
 (1, 51, '2022-05-12 06:00:00', 240, 120),
@@ -6221,7 +6226,7 @@ INSERT INTO `showtime` (`TheatreID`, `FilmID`, `ShowTime`, `Price`, `RemainingSe
 (1, 52, '2022-05-07 09:00:00', 200, 120),
 (1, 52, '2022-05-12 12:30:00', 220, 120),
 (1, 52, '2022-05-12 15:00:00', 220, 120),
-(1, 54, '2022-05-07 12:30:00', 210, 120),
+(1, 54, '2022-05-07 12:30:00', 210, 116),
 (1, 54, '2022-05-07 15:30:00', 210, 120),
 (1, 59, '2022-05-01 19:15:23', 220, 116),
 (1, 59, '2022-05-08 05:45:00', 220, 120),
@@ -6460,6 +6465,22 @@ CREATE TABLE `ticket` (
   `T_Showtime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `ticket`
+--
+
+INSERT INTO `ticket` (`TicketID`, `mID`, `FilmID`, `TheatreID`, `T_Showtime`) VALUES
+(58, '1500000000001', 50, 1, '2022-05-10 11:10:00'),
+(59, '1500000000001', 50, 1, '2022-05-10 11:10:00'),
+(60, '1500000000001', 50, 1, '2022-05-10 11:10:00'),
+(61, '1233567890123', 54, 1, '2022-05-07 12:30:00'),
+(62, '1233567890123', 54, 1, '2022-05-07 12:30:00'),
+(63, '1233567890123', 54, 1, '2022-05-07 12:30:00'),
+(64, '1233567890123', 54, 1, '2022-05-07 12:30:00'),
+(65, '1133450108126', 51, 1, '2022-05-11 02:00:00'),
+(66, '1133450108126', 51, 1, '2022-05-11 02:00:00'),
+(67, '1133450108126', 51, 1, '2022-05-11 02:00:00');
+
 -- --------------------------------------------------------
 
 --
@@ -6484,10 +6505,11 @@ CREATE TABLE `user_account` (
 --
 
 INSERT INTO `user_account` (`ID`, `Password`, `FirstName`, `LastName`, `BirthDay`, `Gender`, `Email`, `HouseNo`, `MO`, `District`) VALUES
-('1111111111111', '25d55ad283aa400af464c76d713c07ad', 'test', 'na', '2022-04-05', 'M', 'Test@gmail.com', '12', '12', 'กกกุง'),
+('1133450108126', '1bbd886460827015e5d605ed44252251', 'Chanikarn', 'Thongdi', '2000-05-06', 'F', 'cnky20@gmail.com', '11/23', '1', 'กกโพธิ์'),
 ('1139400124857', 'e7579203fe04e8d95dd705666e274fe2', 'Atip', 'Boonyooong', '1970-06-04', 'M', 'atip12@hotmail.com', '10/1', '5', 'โพธาราม'),
 ('1139600108126', '1bbd886460827015e5d605ed44252251', 'Rungruch', 'Ruangrong', '2000-10-28', 'M', 'rungruch2543@gmail.com', '11/23', '1', 'ดอนเมือง'),
 ('1139600423166', 'a09a6dfcbf236951a25fdcb14e136f2c', 'Atjima', 'Bhoonphol', '2000-12-14', 'N', 'artjima43@gmail.com', '198/2', '11', 'ดอนเมือง'),
+('1233567890123', '1bbd886460827015e5d605ed44252251', 'fah', 'bhoon', '2000-05-06', 'F', 'fah1@gmail.com', '1', '2', 'กกโพธิ์'),
 ('1500000000001', '8545dec656571011bc8551b78b0a4e4f', 'Thoranin', 'Kaewfu', '2001-10-01', 'M', 'test01@gmail.com', '10', '1', 'คลองหนึ่ง'),
 ('1500000000002', 'a64c756d71fdf8698b7f2f52f70528da', 'Thana', 'Softer', '1998-11-11', 'M', 'thana21@gmail.com', '10', '11', 'กกกุง'),
 ('1500000000003', '5b1de399cde577a0e2400b6ca7dc2e25', 'Sarada', 'Livijid', '2003-01-01', 'F', 'test03@gmail.com', '32', '2', 'ปากช่อง'),
@@ -6497,8 +6519,7 @@ INSERT INTO `user_account` (`ID`, `Password`, `FirstName`, `LastName`, `BirthDay
 ('3200185600329', 'c79246cf62dd4cf679482dc06bb21339', 'Chanikarn', 'Yamwonse', '2001-01-05', 'F', 'newji32@gmail.com', '3', '1', 'สีกัน'),
 ('3240100573148', '6977deb2865471c256db3bf2597773f3', 'Sarayut', 'Pueak', '1960-10-30', 'M', 'saralovevgn@hotmail.com', '9/9', '6', 'บุ่ง'),
 ('3340100323251', '8a4254f975552c567897039a17b7991d', 'Taylor', 'Swift', '1989-12-13', 'F', 'ts13@gmail.com', '13/03', '8', 'ถนนพญาไท'),
-('6990032970211', '40e06353d002c5d4d3aba190dd6e867a', 'Kanticha', 'Ohnnorm', '1980-10-01', 'F', 'ticha44@gmail.com', '56', '2', 'ไผ่ลิง'),
-('9999999999991', 'c8c605999f3d8352d7bb792cf3fdb25b', 'user99', 'user99', '2009-12-28', 'M', 'user99@gmai.com', '9', '9', 'กกสะทอน');
+('6990032970211', '40e06353d002c5d4d3aba190dd6e867a', 'Kanticha', 'Ohnnorm', '1980-10-01', 'F', 'ticha44@gmail.com', '56', '2', 'ไผ่ลิง');
 
 --
 -- Indexes for dumped tables
@@ -6607,13 +6628,13 @@ ALTER TABLE `user_account`
 -- AUTO_INCREMENT for table `film`
 --
 ALTER TABLE `film`
-  MODIFY `FilmID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+  MODIFY `FilmID` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `ticket`
 --
 ALTER TABLE `ticket`
-  MODIFY `TicketID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `TicketID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 
 --
 -- Constraints for dumped tables
@@ -6671,6 +6692,12 @@ ALTER TABLE `showtime`
 ALTER TABLE `show_in`
   ADD CONSTRAINT `show_in_ibfk_1` FOREIGN KEY (`TheatreID`) REFERENCES `theatre` (`TheatreID`) ON DELETE CASCADE,
   ADD CONSTRAINT `show_in_ibfk_2` FOREIGN KEY (`FilmID`) REFERENCES `film` (`FilmID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `theatre`
+--
+ALTER TABLE `theatre`
+  ADD CONSTRAINT `theatre_ibfk_1` FOREIGN KEY (`ManagerID`) REFERENCES `employee` (`eID`);
 
 --
 -- Constraints for table `ticket`
